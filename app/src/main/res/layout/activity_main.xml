@@ -10,47 +10,48 @@
         android:id="@+id/bt_start"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:elevation="20dp"
         android:text="START"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="3:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.25"
-        android:visibility="visible"
-        android:elevation="20dp"/>
+        app:layout_constraintWidth_percent="0.25" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie1"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="visible"
+        app:lottie_fileName="mouse1.json"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_second"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_second"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_first"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_first"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_first" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie2"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_second"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_fourth"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_third"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_first"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_first" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie3"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_second"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_six"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_five"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_first"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_first" />
 
     <!--遮罩-->
     <ImageView
@@ -58,8 +59,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/background1"
-        app:layout_constraintTop_toBottomOf="@+id/gl_hor_mask_top"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_hor_mask_top" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_hor_mask_top"
@@ -72,31 +73,31 @@
         android:id="@+id/lottie4"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_fourth"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_second"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_first"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_third"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_third" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie5"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_fourth"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_fourth"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_third"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_third"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_third" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie6"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_fourth"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_six"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_five"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_third"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_third" />
 
     <!--遮罩-->
     <ImageView
@@ -104,8 +105,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/background2"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_mask_middle"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_mask_middle" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_hor_mask_middle"
@@ -118,31 +119,31 @@
         android:id="@+id/lottie7"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_six"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_second"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_first"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_five"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_five" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie8"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_six"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_fourth"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_third"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_five"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_five" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie9"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/gl_hor_six"
         app:layout_constraintEnd_toEndOf="@+id/gl_ver_six"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_five"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_five"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_five" />
 
     <!--遮罩-->
     <ImageView
@@ -150,8 +151,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/background3"
-        app:layout_constraintTop_toTopOf="@+id/gl_hor_mask_bottom"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gl_hor_mask_bottom" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_hor_mask_bottom"
@@ -243,4 +244,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.79" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_stroke_green_round10"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15" />
 </androidx.constraintlayout.widget.ConstraintLayout>

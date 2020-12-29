@@ -1,4 +1,4 @@
-package com.greattree.hitmouse
+package com.greattree.hitmouse.view
 
 import android.annotation.SuppressLint
 import android.app.Service
@@ -13,6 +13,10 @@ import android.view.animation.TranslateAnimation
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.airbnb.lottie.LottieAnimationView
+import com.greattree.hitmouse.utils.CustomerRipple
+import com.greattree.hitmouse.R
+import com.greattree.hitmouse.utils.UIHelper
+import com.greattree.hitmouse.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 import kotlin.random.Random
@@ -28,7 +32,10 @@ class MainActivity : BaseActivity(), CoroutineScope by MainScope() {
 
     private val startRipple by lazy {
         CustomerRipple(
-            ContextCompat.getColor(this, R.color.red_D45757),
+            ContextCompat.getColor(
+                this,
+                R.color.red_D45757
+            ),
             UIHelper.getDp(this, 8)
         ).rippleDrawable()
     }
@@ -70,11 +77,14 @@ class MainActivity : BaseActivity(), CoroutineScope by MainScope() {
     }
 
     private val mediaPlayer by lazy {
-        MediaPlayer.create(applicationContext, R.raw.sound)
+        MediaPlayer.create(applicationContext,
+            R.raw.sound
+        )
     }
 
     private var mDuration = 1500L
     private var delayTime = 1500L
+    private var mScore = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -92,7 +102,6 @@ class MainActivity : BaseActivity(), CoroutineScope by MainScope() {
             bt_start.visibility = View.GONE
             startGame()
         }
-
 
         for (view in lottieView) {
             view.setOnTouchListener(touchListener)

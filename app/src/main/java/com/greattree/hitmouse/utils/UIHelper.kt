@@ -1,4 +1,4 @@
-package com.greattree.hitmouse
+package com.greattree.hitmouse.utils
 
 import android.content.Context
 import android.content.res.Configuration
@@ -34,7 +34,8 @@ object UIHelper {
      * @return size of display shorter side
      */
     fun getDisplayShorterSideSize(context: Context): Int {
-        val outSize = getDisplaySize(context)
+        val outSize =
+            getDisplaySize(context)
         return if (outSize.x < outSize.y) outSize.x else outSize.y
     }
 
@@ -47,13 +48,17 @@ object UIHelper {
      * @return: number of column
      */
     fun calcGridColumn(context: Context, cellWidth: Int): Int {
-        val displaySize = getDisplaySize(context)
+        val displaySize =
+            getDisplaySize(context)
         val width = displaySize.x
         return width / cellWidth
     }
 
     fun getScreenOrientation(context: Context): Int {
-        return if (getScreenWidth(context) < getScreenHeight(context)) {
+        return if (getScreenWidth(context) < getScreenHeight(
+                context
+            )
+        ) {
             Configuration.ORIENTATION_PORTRAIT
         } else {
             Configuration.ORIENTATION_LANDSCAPE

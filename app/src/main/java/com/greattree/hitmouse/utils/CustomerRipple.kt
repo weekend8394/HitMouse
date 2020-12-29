@@ -1,4 +1,4 @@
-package com.greattree.hitmouse
+package com.greattree.hitmouse.utils
 
 import android.content.res.ColorStateList
 import android.graphics.Color

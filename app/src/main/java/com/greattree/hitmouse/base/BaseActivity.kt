@@ -1,4 +1,4 @@
-package com.greattree.hitmouse
+package com.greattree.hitmouse.base
 
 import android.os.Bundle
 import android.view.View
